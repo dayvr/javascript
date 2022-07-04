@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="clock.js"></script>
+</head>
+<body>
+<div class="clock centered" id="time" onload="digitalClock()">
+        <div id="hour" class="min"></div>
+        <div class="moment">
+            <div id="seconds" class="sec"></div>
+            <div id="format" class="ampm"></div>
+        </div>
+        <div class="date">
+            <div id="weekDay"></div>
+            <div id="date"></div>
+        </div>
+</div>
+</body>
+</html>
