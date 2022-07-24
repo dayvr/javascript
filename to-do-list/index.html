@@ -1,59 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dynamic List</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script type="module" src="js/main.js"></script>
-
-</head>
-<body>
-<article class="app">
-    <header class="app-header">
+  </head>
+  <body>
+    <article class="app">
+      <header class="app-header">
         <h1 class="app-title">Dynamic List</h1>
-    </header>
+      </header>
 
-    <ol class="list js-list">
-
+      <ol class="list js-list">
         <li class="item-header">
-            <span class="item-status">Status</span>
-            <span class="item-name"> Name</span>
-            <span class="item-delete">&nbsp;</span>
+          <span class="item-status">Status</span>
+          <span class="item-name"> Name</span>
+          <span class="item-delete">&nbsp;</span>
         </li>
 
         <li class="item">
-            <a class="item-status" href="#">
-                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m16.5 8.25-6.3 7.5-2.7-3" stroke="#94D24C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.75 3H5.25A2.25 2.25 0 0 0 3 5.25v13.5A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V5.25A2.25 2.25 0 0 0 18.75 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-            </a>
-            <span class="item-name">First item</span>
-            <a class="item-delete" href="#">
-                <svg class="ico-delete" xmlns="http://www.w3.org/2000/svg" pointer-events="bounding-box" viewBox="0 0 512 512"><title>Trash</title><path d="M112 112l20 320c.95 18.49 14.4 32 32 32h184c17.67 0 30.87-13.51 32-32l20-320" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 112h352"/><path d="M192 112V72h0a23.93 23.93 0 0124-24h80a23.93 23.93 0 0124 24h0v40M256 176v224M184 176l8 224M328 176l-8 224" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-            </a>
+          <a class="item-status" href="#">
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m16.5 8.25-6.3 7.5-2.7-3"
+                stroke="#94D24C"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M18.75 3H5.25A2.25 2.25 0 0 0 3 5.25v13.5A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V5.25A2.25 2.25 0 0 0 18.75 3Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <span class="item-name">First item</span>
+          <a class="item-delete" href="#">
+            <svg
+              class="ico-delete"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <title>Trash</title>
+              <path
+                d="M112 112l20 320c.95 18.49 14.4 32 32 32h184c17.67 0 30.87-13.51 32-32l20-320"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+              />
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+                stroke-width="32"
+                d="M80 112h352"
+              />
+              <path
+                d="M192 112V72h0a23.93 23.93 0 0124-24h80a23.93 23.93 0 0124 24h0v40M256 176v224M184 176l8 224M328 176l-8 224"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+              />
+            </svg>
+          </a>
         </li>
 
         <li class="item">
-            <a class="item-status" href="#">
-                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.75 3H5.25A2.25 2.25 0 0 0 3 5.25v13.5A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V5.25A2.25 2.25 0 0 0 18.75 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-            </a>
-            <span class="item-name">Second item</span>
-            <a class="item-delete" href="#">
-                <svg class="ico-delete" xmlns="http://www.w3.org/2000/svg" pointer-events="bounding-box" viewBox="0 0 512 512"><title>Trash</title><path d="M112 112l20 320c.95 18.49 14.4 32 32 32h184c17.67 0 30.87-13.51 32-32l20-320" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 112h352"/><path d="M192 112V72h0a23.93 23.93 0 0124-24h80a23.93 23.93 0 0124 24h0v40M256 176v224M184 176l8 224M328 176l-8 224" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-            </a>
+          <a class="item-status" href="#">
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.75 3H5.25A2.25 2.25 0 0 0 3 5.25v13.5A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V5.25A2.25 2.25 0 0 0 18.75 3Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <span class="item-name">Second item</span>
+          <a class="item-delete" href="#">
+            <svg
+              class="ico-delete"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <title>Trash</title>
+              <path
+                d="M112 112l20 320c.95 18.49 14.4 32 32 32h184c17.67 0 30.87-13.51 32-32l20-320"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+              />
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+                stroke-width="32"
+                d="M80 112h352"
+              />
+              <path
+                d="M192 112V72h0a23.93 23.93 0 0124-24h80a23.93 23.93 0 0124 24h0v40M256 176v224M184 176l8 224M328 176l-8 224"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+              />
+            </svg>
+          </a>
         </li>
 
         <li class="item">
-            <a class="item-status" href="#">
-                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m16.5 8.25-6.3 7.5-2.7-3" stroke="#94D24C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.75 3H5.25A2.25 2.25 0 0 0 3 5.25v13.5A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V5.25A2.25 2.25 0 0 0 18.75 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-            </a>
-            <span class="item-name">Third item</span>
-            <a class="item-delete" href="#">
-                <svg class="ico-delete" xmlns="http://www.w3.org/2000/svg" pointer-events="bounding-box" viewBox="0 0 512 512"><title>Trash</title><path d="M112 112l20 320c.95 18.49 14.4 32 32 32h184c17.67 0 30.87-13.51 32-32l20-320" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 112h352"/><path d="M192 112V72h0a23.93 23.93 0 0124-24h80a23.93 23.93 0 0124 24h0v40M256 176v224M184 176l8 224M328 176l-8 224" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-            </a>
+          <a class="item-status" href="#">
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m16.5 8.25-6.3 7.5-2.7-3"
+                stroke="#94D24C"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M18.75 3H5.25A2.25 2.25 0 0 0 3 5.25v13.5A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V5.25A2.25 2.25 0 0 0 18.75 3Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <span class="item-name">Third item</span>
+          <a class="item-delete" href="#">
+            <svg
+              class="ico-delete"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <title>Trash</title>
+              <path
+                d="M112 112l20 320c.95 18.49 14.4 32 32 32h184c17.67 0 30.87-13.51 32-32l20-320"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+              />
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+                stroke-width="32"
+                d="M80 112h352"
+              />
+              <path
+                d="M192 112V72h0a23.93 23.93 0 0124-24h80a23.93 23.93 0 0124 24h0v40M256 176v224M184 176l8 224M328 176l-8 224"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+              />
+            </svg>
+          </a>
         </li>
-
-    </ol>
-
-</article>
-</body>
+      </ol>
+    </article>
+  </body>
 </html>

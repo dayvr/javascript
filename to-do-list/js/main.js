@@ -19,3 +19,4 @@ let app = new MyApp(document.querySelector('.js-list'), [
 
 app.init();
 app.render();
+console.log("Test");
