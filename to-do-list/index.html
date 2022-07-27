@@ -10,16 +10,17 @@
   <body>
     <article class="app">
       <header class="app-header">
-        <h1 class="app-title">Dynamic List</h1>
+        <h1 class="app-title">To-do List</h1>
       </header>
 
-      <ol class="list js-list">
-        <li class="item-header">
-          <span class="item-status">Status</span>
-          <span class="item-name"> Name</span>
-          <span class="item-delete">&nbsp;</span>
-        </li>
+      <button onclick="toggle(this)">+</button>
 
+        <form class="js-form">
+          <label for="input" hidden></label>
+          <input id="input" type="text" class="js-todo-input" placeholder="What do you want to do today?" autofocus>
+        </form>
+
+      <ol class="list js-list">
         <li class="item">
           <a class="item-status" href="#">
             <svg

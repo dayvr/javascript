@@ -1,22 +1,8 @@
 import {MyApp} from "./modules/app.js";
 
-let app = new MyApp(document.querySelector('.js-list'), [
-    {
-        done: false,
-        name: 'One',
-    }, {
-        done: true,
-        name: 'Two',
-    }, {
-        done: true,
-        name: 'Three',
-    }, {
-        done: false,
-        name: 'Four',
-    }
-]);
+let toDoList = [];
 
+let myApp = new MyApp(toDoList);
 
-app.init();
-app.render();
-console.log("Test");
+myApp.init();
+myApp.render();
