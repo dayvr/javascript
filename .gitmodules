@@ -1,0 +1,12 @@
+[submodule "clock-app"]
+	path = clock-app
+	url = git@github.com:dayvr/clock-app.git
+[submodule "to-do-list"]
+	path = to-do-list
+	url = git@github.com:dayvr/to-do-list.git
+[submodule "stopwatch"]
+	path = stopwatch
+	url = git@github.com:dayvr/stopwatch.git
+[submodule "currencies-app"]
+	path = currencies-app
+	url = git@github.com:dayvr/currencies-app.git
